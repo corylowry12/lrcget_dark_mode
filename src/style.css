@@ -1,0 +1,173 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-brave-95;
+}
+
+.titlebar {
+  height: 30px;
+  background: #329ea3;
+  user-select: none;
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.titlebar-button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+}
+.titlebar-button:hover {
+  background: #5bbec3;
+}
+
+.dropdown-arrow-button {
+  @apply bg-brave-90 hover:bg-brave-80 text-brave-25 active:bg-brave-70 active:dark:bg-brave-5 border-brave-80;
+}
+
+.dropdown-arrow-button-disabled {
+  @apply box-border border-2 border-brave-90 dark:border-brave-30 bg-brave-98 dark:bg-brave-5 text-brave-70 cursor-not-allowed;
+}
+
+.dropdown-arrow-button-active {
+  @apply bg-brave-70 active:dark:bg-brave-5;
+}
+
+.dropdown-popup {
+  @apply absolute rounded-lg left-1/2 top-8 -translate-x-1/2 z-10 py-1 shadow-xl bg-brave-95;
+}
+
+.dropdown-item {
+  @apply text-xs transition uppercase font-bold;
+}
+
+.button {
+  @apply transition uppercase font-bold flex gap-1 items-center justify-center;
+}
+
+.button-normal {
+  @apply bg-brave-90 hover:bg-brave-80 text-brave-25 active:bg-brave-70
+  dark:bg-transparent dark:border-2 dark:border-brave-20 dark:text-brave-90
+  dark:hover:bg-brave-20 dark:active:bg-brave-25;
+}
+
+.button-warning {
+  @apply bg-yellow-100 hover:bg-yellow-200 text-yellow-800 active:bg-yellow-300;
+}
+
+.border-normal {
+  @apply border-brave-25;
+}
+
+.button-normal2 {
+  @apply bg-brave-90/50 hover:bg-brave-80 text-brave-25 active:bg-brave-70;
+}
+
+.button-primary {
+  @apply bg-brave-30 hover:bg-brave-35 text-white active:bg-brave-25 dark:bg-brave-80 dark:hover:bg-brave-90 dark:active:bg-brave-90 dark:text-brave-20;
+}
+
+.button-secondary {
+  @apply bg-brave-90 text-brave-30 hover:bg-brave-80 active:bg-brave-70;
+}
+
+.button-working {
+  @apply bg-brave-90 hover:bg-brave-80 text-brave-25 active:bg-brave-70;
+}
+
+.button-disabled {
+  @apply box-border border-2 border-brave-90 dark:border-brave-30 bg-brave-98 dark:bg-brave-5 text-brave-70 cursor-not-allowed;
+}
+
+.button-blend {
+  @apply hover:bg-brave-90 text-brave-25 active:bg-brave-70;
+}
+
+.button-done {
+  @apply bg-green-100 hover:bg-green-200 text-green-800 active:bg-green-800 active:text-white;
+}
+
+.link {
+  @apply text-green-800 dark:text-green-600 hover:text-green-900 hover:dark:text-green-700 active:text-green-700 transition text-sm;
+}
+
+.group-label {
+  @apply font-bold text-xs uppercase text-brave-70 block;
+}
+
+.checkbox {
+  @apply w-4 h-4 text-brave-90 bg-brave-35 accent-brave-35 rounded border-brave-35;
+}
+
+.checkbox-label {
+  @apply text-sm text-brave-35 dark:text-brave-40;
+}
+
+.input {
+  @apply bg-brave-98 box-border border-2 border-brave-90 focus:border-brave-80 outline-none
+  text-sm rounded-full transition text-brave-35 placeholder:text-brave-70
+  dark:bg-brave-5 dark:border-brave-30 dark:focus:border-brave-20 dark:text-brave-95
+  dark:placeholder:text-brave-90;
+}
+
+.Vue-Toastification__toast.lrcget-toast {
+  padding: 12px 24px !important;
+  min-width: auto !important;
+  min-height: auto !important;
+}
+
+/* Applied to the toast body when using regular strings as content */
+.Vue-Toastification__toast-body.toast-body-1 {
+  font-size: 12px;
+}
+
+/* Applied to a wrapper div when using a custom component as content */
+.Vue-Toastification__toast-component-body.toast-body-2 {
+}
+
+.slide-fade-enter-active {
+  transition: all 0.2s ease-out;
+}
+
+.slide-fade-leave-active {
+  transition: all 0.2s ease-out;
+}
+
+.slide-fade-enter-from,
+.slide-fade-leave-to {
+  transform: translateX(100px);
+  opacity: 0;
+}
+
+.pop-fade-enter-from, .pop-fade-leave-to {
+  opacity: 0;
+  transform: scale(0.7);
+}
+
+.pop-fade-enter-to, .pop-fade-leave-from {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.pop-fade-enter-active, .pop-fade-leave-active {
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.fade-enter-from, .fade-leave-to {
+  opacity: 0;
+}
+
+.fade-enter-to, .fade-leave-from {
+  opacity: 1;
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 0.2s ease;
+}
